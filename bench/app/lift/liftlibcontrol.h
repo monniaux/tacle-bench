@@ -50,15 +50,15 @@ extern int lift_endCnt;
 extern int lift_checksum;
 
 /* prototypes */
-void lift_ctrl_init();
-void lift_ctrl_loop();
+void lift_ctrl_init(void);
+void lift_ctrl_loop(void);
 
 /* internal prototypes */
-int lift_check_run();
-void lift_wait_for_motor_start();
-void lift_do_cmd();
+int lift_check_run(void);
+void lift_wait_for_motor_start(void);
+void lift_do_cmd(void);
 void lift_do_impulse( int val, int motor, int reset );
-void lift_check_cmd();
-void lift_check_level();
+void lift_check_cmd(void);
+void lift_check_level(void);
 
 #endif
